@@ -1095,8 +1095,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1549887623799726}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 208.2, y: 53.492, z: 1.78}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 71.42, y: 53.492, z: 1.78}
   m_LocalScale: {x: 1.0000005, y: 1, z: 1.0000005}
   m_Children:
   - {fileID: 4286209611870790}
@@ -1454,7 +1454,7 @@ MonoBehaviour:
   chesireDieParticles: {fileID: 19800004, guid: 7867af58a6ec48846ae807eb4022fbaa,
     type: 2}
   timeToDie: 5
-  sonidoDolor: {fileID: 8300000, guid: 9cb962beba56ae845a638a84da14299a, type: 3}
+  sonidoDolor: {fileID: 8300000, guid: f023dafb3bd822c4fa9502f3912db9fe, type: 3}
   isDead: 0
 --- !u!136 &136045761616730082
 CapsuleCollider:
