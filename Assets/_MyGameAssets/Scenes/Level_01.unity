@@ -12922,12 +12922,12 @@ Prefab:
     - target: {fileID: 224312702187023772, guid: 0af5fa770f505c5488c1350f398558dd,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224312702187023772, guid: 0af5fa770f505c5488c1350f398558dd,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0af5fa770f505c5488c1350f398558dd, type: 2}
@@ -13639,7 +13639,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4950610731399412, guid: 6984adf3f28dc0a46948b3e7ab8b05f3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 110
+      value: 9.79
       objectReference: {fileID: 0}
     - target: {fileID: 4950610731399412, guid: 6984adf3f28dc0a46948b3e7ab8b05f3, type: 2}
       propertyPath: m_LocalPosition.y
