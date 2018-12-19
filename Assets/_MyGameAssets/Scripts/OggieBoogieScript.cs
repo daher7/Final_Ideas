@@ -18,6 +18,7 @@ public class OggieBoogieScript : MonoBehaviour {
     [SerializeField] ParticleSystem oggieDieParticles;
     [SerializeField] float timeToDie = 5.0f;
     private CapsuleCollider capsule;
+    //[SerializeField] BoxCollider capsuleDead;
 
     [SerializeField] AudioClip sonidoDolor;
     AudioSource fuenteAudio;
@@ -26,6 +27,7 @@ public class OggieBoogieScript : MonoBehaviour {
 
     void Start() {
         capsule = GetComponentInChildren<CapsuleCollider>();
+        
         nav = GetComponentInChildren<NavMeshAgent>();
         anim = GetComponentInChildren<Animator>();
         fuenteAudio = GetComponent<AudioSource>();
@@ -38,14 +40,16 @@ public class OggieBoogieScript : MonoBehaviour {
                 nav.SetDestination(player.transform.position);
                 if (nav.remainingDistance >= nav.stoppingDistance) {
                     anim.SetBool("isRunning", true);
+                    anim.SetBool("isIdle", false);
                 } else {
                     anim.SetBool("isRunning", false);
+                    anim.SetBool("isIdle", true);
                 }
             } else {
                 anim.SetBool("isRunning", false);
+                anim.SetBool("isIdle", true);
             }
         }
-
     }
 
     public void RecibirDanyo(int danyo) {
@@ -62,6 +66,9 @@ public class OggieBoogieScript : MonoBehaviour {
         isDead = true;
         nav.enabled = false;
         anim.SetTrigger("isDead");
+        
+        //capsuleDead.enabled = true;
+        //capsule.enabled = false;
         player.gameObject.GetComponent<MickeyMouseScript>().IncrementarPuntuacion(puntos);
         Invoke("ActivarSistemaParticulas", timeToDie);
         Destroy(gameObject, 5f);

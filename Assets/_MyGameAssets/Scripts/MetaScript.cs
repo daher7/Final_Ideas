@@ -18,7 +18,7 @@ public class MetaScript : MonoBehaviour {
             }
             PlayerPrefs.SetInt("nivelDesbloqueado", MainMenuScript.nivelesDesbloqueados = 1);
             SceneManager.LoadScene(2);
-            PlayerPrefs.Save();
+            //PlayerPrefs.Save();
         }
     }
 
