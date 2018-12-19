@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 4412925630196300}
   m_Layer: 0
   m_Name: OggieBoogie
-  m_TagString: Oggie
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -515,9 +515,11 @@ GameObject:
   - component: {fileID: 195803971208034102}
   - component: {fileID: 114863818572420616}
   - component: {fileID: 82009082255728888}
+  - component: {fileID: 65796146340067688}
+  - component: {fileID: 114433109799447316}
   m_Layer: 0
   m_Name: Modelo
-  m_TagString: Oggie
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1411,6 +1413,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 1
+--- !u!65 &65796146340067688
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1785536169513892}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.673195, z: 0.3123702}
+  m_Center: {x: 2.3167357e-17, y: 1.2774467, z: 0.013994738}
 --- !u!82 &82009082255728888
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1422,7 +1436,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.85
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1524,6 +1538,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114433109799447316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1785536169513892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c9b3e96f605bc740afbd67adf2c7efd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  llaveItem: {fileID: 1740428115211738, guid: f21c7baf905241541af94341879324c7, type: 2}
 --- !u!114 &114863818572420616
 MonoBehaviour:
   m_ObjectHideFlags: 1

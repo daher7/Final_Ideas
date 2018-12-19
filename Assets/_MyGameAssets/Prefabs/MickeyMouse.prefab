@@ -1776,7 +1776,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1184715957953636}
   m_LocalRotation: {x: -0, y: 0.7071064, z: -0, w: 0.7071072}
-  m_LocalPosition: {x: -14, y: -85.47, z: 1}
+  m_LocalPosition: {x: 110, y: 53.46, z: 1.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4073828541045002}
@@ -1999,7 +1999,7 @@ MonoBehaviour:
   yendoDerecha: 1
   xDirection: 0
   yDirection: 0
-  jumpSpeed: 600
+  jumpSpeed: 650
   enSuelo: 1
   ground: {fileID: 4854620571110938}
   longRaycast: 1.5
@@ -2012,7 +2012,7 @@ MonoBehaviour:
   ptoGeneracion: {fileID: 4583285238149616}
   prefabCuchillo: {fileID: 1938406162677300, guid: d77067a5314057e41b3f4f1e32474769,
     type: 2}
-  fuerza: 600
+  fuerza: 650
   puedoDisparar: 0
   tiempoEntreDisparos: 0.01
   puntuacionActual: 0
