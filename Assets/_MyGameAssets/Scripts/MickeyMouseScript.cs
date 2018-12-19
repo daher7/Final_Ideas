@@ -44,6 +44,7 @@ public class MickeyMouseScript : MonoBehaviour {
 
     // SONIDOS
     [SerializeField] AudioClip sonidoSalto;
+    [SerializeField] AudioClip sonidoDisparo;
     AudioSource fuenteAudio;
 
     // ABRIR PUERTA
@@ -127,6 +128,8 @@ public class MickeyMouseScript : MonoBehaviour {
     private void Disparar() {
         GameObject proyectil = Instantiate(prefabCuchillo, ptoGeneracion.position, ptoGeneracion.rotation);
         proyectil.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * fuerza);
+        fuenteAudio.clip = sonidoDisparo;
+        fuenteAudio.Play();
     }
 
     // Funcion para recibir puntos

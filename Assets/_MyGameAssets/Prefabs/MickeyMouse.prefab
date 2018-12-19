@@ -2018,9 +2018,8 @@ MonoBehaviour:
   puntuacionActual: 0
   textPuntuacion: {fileID: 0}
   puntosTemporales: 0
-  soyInvencible: 0
-  tiempoInvencible: 10
   sonidoSalto: {fileID: 8300000, guid: 1b22e68fa25dce04f8456487c3bd9925, type: 3}
+  sonidoDisparo: {fileID: 8300000, guid: 971b16109194d1f4da93abd7f8e0a7c7, type: 3}
   tengoLlave: 0
 --- !u!136 &136743111790269972
 CapsuleCollider:

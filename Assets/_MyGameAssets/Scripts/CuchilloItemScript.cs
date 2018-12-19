@@ -5,6 +5,7 @@ using UnityEngine;
 public class CuchilloItemScript : MonoBehaviour {
 
     [SerializeField] int speedRotation = 3;
+    [SerializeField] ParticleSystem particle;
     int puntos = 50;
    
 
@@ -18,6 +19,8 @@ public class CuchilloItemScript : MonoBehaviour {
         {
             other.GetComponentInParent<MickeyMouseScript>().puedoDisparar = true;
             other.GetComponentInParent<MickeyMouseScript>().IncrementarPuntuacion(puntos);
+            ParticleSystem ps = Instantiate(particle, transform.position, Quaternion.identity);
+            ps.Play();
             Destroy(gameObject);
         }
     }
