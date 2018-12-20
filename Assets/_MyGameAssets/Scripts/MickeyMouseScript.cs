@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class MickeyMouseScript : MonoBehaviour {
 
@@ -64,13 +65,13 @@ public class MickeyMouseScript : MonoBehaviour {
     }
 
     void Update() {
-        xDirection = Input.GetAxis("Horizontal");
-        yDirection = Input.GetAxis("Vertical");
+        xDirection = CrossPlatformInputManager.GetAxis("Horizontal");
+        yDirection = CrossPlatformInputManager.GetAxis("Vertical");
 
         // Salto con RayCast
         EstarEnSuelo();
 
-        if (enSuelo && Input.GetButtonDown("Jump")) {
+        if (enSuelo && CrossPlatformInputManager.GetButtonDown("Jump")) {
             print("Puedo Saltar");
             anim.SetTrigger("isJumping");
             rigidMickey.AddForce(new Vector2(0, jumpSpeed));
@@ -79,7 +80,7 @@ public class MickeyMouseScript : MonoBehaviour {
             //rigidMickey.AddForce(Vector3.up * jumpSpeed);
         }
 
-        if (Input.GetButtonDown("Fire1") && puedoDisparar) {
+        if (CrossPlatformInputManager.GetButtonDown("Fire1") && puedoDisparar) {
             IntentoDeAtaque();
         }
     }

@@ -26381,26 +26381,6 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1690366665}
-    - target: {fileID: 224312702187023772, guid: 0af5fa770f505c5488c1350f398558dd,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224312702187023772, guid: 0af5fa770f505c5488c1350f398558dd,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224469786081098232, guid: 0af5fa770f505c5488c1350f398558dd,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -72.100006
-      objectReference: {fileID: 0}
-    - target: {fileID: 224469786081098232, guid: 0af5fa770f505c5488c1350f398558dd,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -57.30005
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0af5fa770f505c5488c1350f398558dd, type: 2}
   m_IsPrefabAsset: 0
